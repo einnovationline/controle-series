@@ -1,0 +1,4 @@
+ coloca a barra de consulta de queries
+ composer require barryvdh/laravel-debugbar --dev
+ 
+ https://github.com/barryvdh/laravel-debugbar
