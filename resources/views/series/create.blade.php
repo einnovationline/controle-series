@@ -17,7 +17,7 @@
             </div>
 
         <div class="col-2">
-                <label for="seasonsQty" class="form-label">N de temporadas:</label>
+                <label for="seasonsQty" class="form-label">Nº temporadas:</label>
                 <input type="text" 
                     id="seasonsQty" 
                     name="seasonsQty" 
@@ -26,7 +26,7 @@
             </div>
 
         <div class="col-2">
-                <label for="episodesPerSeason" class="form-label">Ep / Temporada:</label>
+                <label for="episodesPerSeason" class="form-label">Eps / Temporada:</label>
                 <input type="text" 
                     id="episodesPerSeason" 
                     name="episodesPerSeason" 
@@ -36,6 +36,6 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Adicionar</button>
-        <a href="{{ route('series.index') }}" class="btn btn-light" >Cancelar</a>
     </form>
+        <a href="{{ route('series.index') }}" class="btn btn-light" >Cancelar</a>
 </x-layout>

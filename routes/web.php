@@ -38,4 +38,4 @@ Route::resource('/series', SeriesController::class)->except(['show']);
 //});
 //Route::delete('/series/destroy/{id}', [SeriesController::class, 'destroy'])->name('series.destroy'); 
 
-Route::get('/series/{series)/seasons', [SeasonsController::class, 'index'])->name('seasons.index');
+Route::get('/series/{series}/seasons', [SeasonsController::class, 'index'])->name('seasons.index');
