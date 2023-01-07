@@ -19,15 +19,15 @@ class SeriesFormRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array<string, mixed>
+     * @return array
      */
     public function rules()
     {
         return [
-            'nome' => ['required', 'min:3']
+            'nome' => ['required', 'min:2'],
         ];
     }
-    
+}
 //    public function messages() {
 //        return [
 //            'nome.*' => 'O campo nome é obrigatório e precisa de pelo menos :min caracteres' //forma nova
@@ -38,4 +38,3 @@ class SeriesFormRequest extends FormRequest
 //        //'https://github.com/lucascudo/laravel-pt-BR-localization/blob/master/src/pt-BR/validation.php
 //        //criei o validation.php em português e criei uma copia no validation_1.php que está em inglês 
 //    }
-}
