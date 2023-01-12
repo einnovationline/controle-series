@@ -4,6 +4,7 @@ use App\Http\Controllers\SeasonsController;
 use App\Http\Controllers\EpisodesController;
 use App\Http\Controllers\SeriesController;
 use Illuminate\Support\Facades\Route;
+use illuminate\Http\Request;
 
 use function GuzzleHttp\Promise\all;
 
@@ -38,6 +39,7 @@ Route::get('/series/{series}/seasons', [SeasonsController::class, 'index'])->nam
 
 Route::get('/seasons/{season}/episodes', [EpisodesController::class, 'index'])->name('episodes.index');
 Route::post('/seasons/{season}/episodes', [EpisodesController::class, 'update'])->name('episodes.update');
+//route::post('/seasons/{season}/episodes', function (\Illuminate\Http\Request $request){ dd($request->all('episodes')); });
 //route::post('/seasons/{season}/episodes', function (\Illuminate\Http\Request $request){ dd($request->all()); });
 
 //esse route acima substituiu todo esses comandos abaixo:
