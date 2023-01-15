@@ -4,20 +4,23 @@ namespace App\Http\Controllers;
 
 use App\Models\Episode;
 use App\Models\Season;
-use illuminate\Http\Request;
+use Illuminate\Http\Request;
 
 class EpisodesController {
     public function index(Season $season) {
-        return view('episodes.index', ['episodes' => $season->episodes]);
+        return view('episodes.index', [
+            'episodes' => $season->episodes,
+            'mensagemSucesso' => session('mensagem.sucesso')
+        ]);
     }
 
     public function update(Request $request, Season $season) {
-        dd($uri = $request->method());
+       // dd($uri = $request->method());
 //dd($uri = $request->all('episode'));
 
         $watchedEpisodes = $request->episodes;
         $season->episodes->each(function (Episode $episode) use ($watchedEpisodes) {
-            $episode->whatched = in_array($episode->id, $watchedEpisodes);
+            $episode->watched = in_array($episode->id, $watchedEpisodes);
         });
         $season->push();//salva as alterações da model atual e seus relacionamentos
 

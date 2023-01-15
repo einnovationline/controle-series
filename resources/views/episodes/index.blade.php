@@ -1,4 +1,4 @@
-<x-layout title="Episódios:">
+<x-layout title="Episódios: " :mensagem.sucesso='$mensagemSucesso'>
     <form method="post">
         @csrf
         <ul class="list-group">
@@ -14,4 +14,5 @@
         </ul>
         <button class="btn btn-primary mt-2 mb-2">Salvar</button>
     </form>
+    <a href="{{ route('series.index') }}" class="btn btn-light" >Voltar</a>
 </x-layout>

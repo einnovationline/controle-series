@@ -6,9 +6,10 @@
                     Temporada {{ $season->number }}
                 </a>
                 <span class="badge bg-secondary">
-                    {{ $season->episodes->count() }}
+                    {{ $season->numberOfWatchedEpisodes() }} / {{ $season->episodes->count() }}
                 </span>
             </li>
         @endforeach
     </ul>
+    <a href="{{ route('series.index') }}" class="btn btn-light" >Voltar</a>
 </x-layout>
