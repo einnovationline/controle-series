@@ -14,5 +14,4 @@
     </div>
 
     <button type="submit" class="btn btn-primary">Adicionar</button>
-    <a href="{{ route('series.index') }}" class="btn btn-light" >Cancelar</a>
 </form>
