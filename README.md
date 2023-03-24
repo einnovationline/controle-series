@@ -7,8 +7,18 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-<h1>Series Control Project - The project intends to better understand PHP Laravel and adopt the best practices and understanding of this Framework!</h1>
+<h1>Series Control Project - Projeto de Controle de Séries</h1>
+<h2>The purpose of the project is to better understand PHP Laravel and adopt the best practices of this Framework!</h2>
+<h2>O intuito do projeto é entender melhor o PHP Laravel e adotar as melhores práticas deste Framework!</h2>
+<h3><li>Download the project - Baixe o projeto</h3>
+<h3><li>I used Visual Studio Code - Utilizei o Visual Studio Code</h2>
+<h3><li>Run the project with the command - Rode o projeto com o comando: php artisan serve</h2>
+<h3><li>Url http://127.0.0.1:8000/series</h2>
 
+<img src="https://avatars.githubusercontent.com/u/112901428?s=400&u=e22d3f320aedbcda26c2f9b14b71d4f11556f475&v=4" width=115><br><sub></sub>
+
+<p>
+    
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
