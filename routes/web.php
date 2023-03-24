@@ -21,7 +21,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+require __DIR__.'/auth.php';//pasta pra onde foram os routes
 
 // abaixo vai pra página laravel inicial
 //Route::get('/', function () {
